@@ -5,6 +5,6 @@ source "https://rubygems.org"
 gem 'rack'
 gem 'sinatra'
 
-group :development do
+group :assets do
   gem 'warbler'
 end
