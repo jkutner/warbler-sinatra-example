@@ -31,6 +31,33 @@ Then open a browser to `http://localhost:8080`
 
 ## Deploying
 
+### Heroku Button
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+### Ruby Buildpack Deployment
+
+```sh-session
+$ git clone https://github.com/kissaten/warbler-example
+$ cd warbler-example
+$ heroku create
+$ git push heroku master
+```
+
+### Standalone Toolbelt Deployment
+
+```sh-session
+$ git clone https://github.com/kissaten/warbler-example
+$ cd warbler-example
+$ heroku create
+$ heroku plugins:install https://github.com/heroku/heroku-deploy
+$ bundle install
+$ warble
+$ heroku deploy:jar --jar heroku-warbler-example.war
+```
+
+### Maven Deployment
+
 You can deploy this project to Heroku by installing the Heroku Toolbelt, and running the following commands:
 
 ```sh-session
