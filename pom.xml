@@ -19,7 +19,7 @@
         <configuration>
           <appName>jkutner-test</appName>
           <processTypes>
-            <web>java -Djetty.port=${PORT} -jar *.war</web>
+            <web>java -jar *.war</web>
           </processTypes>
           <includes>
             <include>jruby-async-servlets-example.war</include>
